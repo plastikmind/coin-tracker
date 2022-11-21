@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Coin } from "./components/Coin";
+import Coin from "./components/Coin";
 import Navbar from "./components/Navbar";
 
 const Home = () => {

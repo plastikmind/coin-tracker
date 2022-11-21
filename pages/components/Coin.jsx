@@ -1,6 +1,6 @@
 import CoinSetup from "./CoinSetup";
 
-export const Coin = (props) => {
+const Coin = (props) => {
   return (
     <div className="flex bg-[#1a1645] items-center justify-center">
       <div className="relative overflow-x-auto ">
@@ -27,7 +27,7 @@ export const Coin = (props) => {
               </th>
             </tr>
           </thead>
-          {props.coin.map((coin, z) => {
+          {props?.coin?.map((coin, z) => {
             return <CoinSetup coin={coin} key={z} />;
           })}
         </table>
@@ -35,3 +35,4 @@ export const Coin = (props) => {
     </div>
   );
 };
+export default Coin;
